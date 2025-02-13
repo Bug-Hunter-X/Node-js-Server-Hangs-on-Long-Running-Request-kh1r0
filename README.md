@@ -1,0 +1,3 @@
+# Node.js Server Hang Issue
+
+This repository demonstrates a common issue in Node.js where a long-running request can cause the server to hang.  The problem is exacerbated by using a synchronous `while` loop, which blocks the event loop preventing other requests to be processed. This example uses a simple HTTP server to illustrate.  The solution demonstrates how to handle such scenarios using asynchronous operations or worker threads.
